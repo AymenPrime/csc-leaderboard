@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.cf1a1574.css",
+    "main.js": "/static/js/main.86bc00f0.js",
+    "static/media/adelin-preda--tOr_T4qTpQ-unsplash.jpg": "/static/media/adelin-preda--tOr_T4qTpQ-unsplash.cbdc673e4531d5dd5f37.jpg",
+    "static/media/background.mp4": "/static/media/background.08c554343fcb5bee20b5.mp4",
+    "index.html": "/index.html",
+    "main.cf1a1574.css.map": "/static/css/main.cf1a1574.css.map",
+    "main.86bc00f0.js.map": "/static/js/main.86bc00f0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cf1a1574.css",
+    "static/js/main.86bc00f0.js"
+  ]
+}

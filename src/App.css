@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap');
+
+/* General styles */
+body {
+  margin: 0;
+  font-family: "Josefin Sans", serif;
+  font-optical-sizing: auto;
+  background-color: #f4f4f9;
+  color: #333;
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+/* Landing page container */
+.landing-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  background-color: #1a1a28;
+  background-image: url(./assests/adelin-preda--tOr_T4qTpQ-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Logo at the top left corner */
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(161, 161, 161, 0.1);
+  font-family: "Josefin Sans", serif;
+  cursor: pointer;
+  transition: 0.55s ease;
+}
+
+.logo:hover {
+  transform: translateY(-5px);
+}
+
+/* Heading */
+h1 {
+  font-size: 6vw; /* Responsive font size */
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-family: "Playwrite IT Moderna", serif;
+}
+
+/* Description text */
+.description {
+  font-size: 1.2rem;
+  max-width: 60%;
+  margin-bottom: 40px;
+  line-height: 1.6;
+  color: #bdbdbd;
+  font-family: "Poppins", serif;
+  font-weight: 400;
+}
+
+/* Button container */
+.button-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap; /* Ensures buttons stack on smaller screens */
+  justify-content: center;
+}
+
+/* Buttons */
+.landing-button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #0073e6;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.landing-button:hover {
+  background-color: #005bb5;
+  transform: scale(1.05);
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 5vw;
+  }
+  
+  .description {
+    font-size: 1rem;
+  }
+
+  .landing-button {
+    padding: 10px 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 4.5vw;
+  }
+
+  .description {
+    font-size: 0.95rem;
+    max-width: 90%;
+  }
+
+  .logo {
+    font-size: 20px;
+    padding: 8px 16px;
+  }
+
+  .landing-button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 8vw;
+  }
+
+  .description {
+    font-size: 0.9rem;
+    max-width: 95%;
+  }
+
+  .logo {
+    top: 10px;
+    left: 10px;
+    font-size: 18px;
+    padding: 6px 12px;
+  }
+
+  .button-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .landing-button {
+    padding: 12px 18px;
+    font-size: 0.85rem;
+  }
+}
